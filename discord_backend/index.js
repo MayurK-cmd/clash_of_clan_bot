@@ -34,3 +34,10 @@ client.on('interactionCreate', async interaction => {
 });
 
 client.login(process.env.DISCORD_TOKEN);
+
+
+const port = 3000;
+app.listen(port, ()=>{
+  console.log("The server is running on port " + port);
+  console.log("The Discord bot is ready!");
+})
