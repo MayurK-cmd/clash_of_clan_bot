@@ -1,6 +1,8 @@
 require('dotenv').config();
 const { Client, Collection, GatewayIntentBits } = require('discord.js');
 const fs = require('fs');
+const express = require('express')
+const app = express();
 
 const client = new Client({
   intents: [GatewayIntentBits.Guilds]
@@ -37,6 +39,9 @@ client.login(process.env.DISCORD_TOKEN);
 
 
 const port = 3000;
+app.get('/test', (req, res) => {
+  res.send('Discord Bot is running!');
+});
 app.listen(port, ()=>{
   console.log("The server is running on port " + port);
   console.log("The Discord bot is ready!");
