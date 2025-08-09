@@ -118,7 +118,7 @@ export default function InvitePage() {
                 Invite to your server
               </a>
 
-              <button
+              {/* <button
                 type="button"
                 onClick={() =>
                   navigator.clipboard &&
@@ -128,7 +128,7 @@ export default function InvitePage() {
                 aria-label="Copy invite link"
               >
                 Copy link
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
