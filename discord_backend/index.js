@@ -39,8 +39,9 @@ client.login(process.env.DISCORD_TOKEN);
 
 
 const port = 3000;
-app.get('/test', (req, res) => {
-  res.send('Discord Bot is running!');
+app.get('/', (req, res) => {
+  res.send('The bot is running successfully! Wait for 50 seconds for the bot to be ready.');
+  res.send('Invite thebot to your server! Link: https://discord.com/oauth2/authorize?client_id=1403062224196599809')
 });
 app.listen(port, ()=>{
   console.log("The server is running on port " + port);
