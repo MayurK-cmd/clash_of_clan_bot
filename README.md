@@ -26,5 +26,5 @@ A simple and fun **Clash of Clans Discord bot** that lets users look up in-game 
 
 ### 2️⃣ Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
+git clone https://github.com/MayurK-cmd/clash_of_clan_bot.git
+cd clash_of_clan_bot
